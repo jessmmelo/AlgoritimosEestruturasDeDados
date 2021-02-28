@@ -29,6 +29,8 @@ public class ListaEstatica {
 		info = novo;
 	}
 	
-	
+	public void buscar() {
+		
+	}
 
 }
