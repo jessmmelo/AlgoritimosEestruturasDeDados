@@ -1,6 +1,6 @@
 package app;
 
-import listas.ListaEstatica;
+import lista01.ListaEstatica;
 
 public class App {
 
@@ -22,7 +22,7 @@ public class App {
 		le.inserir(46);
 		le.inserir(46);
 		
-	System.out.println("funcjauiaigfsg");
+	System.out.println(le);
 	}
 
 }
