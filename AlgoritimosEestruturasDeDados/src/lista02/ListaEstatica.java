@@ -86,14 +86,30 @@ public class ListaEstatica <ClasseParametrizada> {
 		return resultado;
 	}
 	
+	//public void inverter() {
+		//for (int i = 0; i < tamanho / 2; i++) {
+			//ClasseParametrizada p = info[i];
+			//info[i] = info[tamanho - i - 1];
+			//info[tamanho - i - 1] = p;
+		//}
+	//}
+ 
+	// metodo inverter que o professor fez
 	public void inverter() {
-		for (int i = 0; i < tamanho / 2; i++) {
-			ClasseParametrizada p = info[i];
-			info[i] = info[tamanho - i - 1];
-			info[tamanho - i - 1] = p;
+		int esquerda = 0;
+		int direita = tamanho-1;
+		int meio = tamanho / 2;
+		
+		ClasseParametrizada backup;
+		
+		while (esquerda < meio) {
+			backup = info [esquerda];
+			info [esquerda ] = info [direita];
+			info [direita] = backup;
+			 esquerda++;
+			 direita++;
 		}
 	}
- 
 	
 	
 }
