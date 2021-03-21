@@ -9,6 +9,7 @@ public class NoLista <T>{
 	private NoLista proximo;
 	
 	public void setInfo(T info) {
+		this.getInfo = info;
 		
 	}
 	
